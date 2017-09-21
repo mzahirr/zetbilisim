@@ -401,10 +401,23 @@ input[type=text] {
 }
 
 .item {
+    float: left;
+}
+
+.item2 {
     margin-right: 10px;
 }
 
+.owl-nav { 
+    display: none; 
+}
+.owl-two {
+    height: 200px;
+}
+
 .slider-baslik {
+    float: left;
+    width: 100%;
     position: relative;
     font-family: "ProximaNovaExtrabold";
     font-size: 50px;
@@ -2660,6 +2673,7 @@ figure.effect-bubba:hover p {
     display: table;
     padding: 17px 0px 0px 0px;
 }
+
 /*----------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
@@ -2723,15 +2737,33 @@ figure.effect-bubba:hover p {
 
 }
 
+@media (max-width: 1199px) {
+    .referanslar {
+        width: 130px;
+    }
+}
+
+@media (max-width: 991px) {
+    .referanslar {
+        width: 110px;
+    }
+}
+
 @media (max-width: 768px) {
     .figure-ic-sol {
         margin-left: 90px;
+    }
+    .referanslar {
+        width: 100px;
     }
 }
 
 @media (max-width: 702px) {
     .slider-manset-yazi {
         font-size: 14px;
+    }
+    .referanslar {
+        width: 90px;
     }
 }
 
@@ -2749,6 +2781,9 @@ figure.effect-bubba:hover p {
     .sabit {
         height: 530px;
         margin-top: 110px;
+    }
+    .referanslar {
+        width: 80px;
     }
 }
 
