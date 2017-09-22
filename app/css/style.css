@@ -404,21 +404,39 @@ input[type=text] {
     float: left;
 }
 
-.item2 {
+.menuItem {
     margin-right: 10px;
+}
+
+.kolon {
+    float: left;
+    width: 50%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.sol {
+    width: 90%;
+}
+
+.container-full {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.harita {
+    margin-top: 30px;
 }
 
 .owl-nav { 
     display: none; 
 }
-.owl-two {
-    height: 200px;
-}
 
 .slider-baslik {
     float: left;
     width: 100%;
-    position: relative;
     font-family: "ProximaNovaExtrabold";
     font-size: 50px;
     color: white;
@@ -653,6 +671,7 @@ input[type=text] {
     display: inline-block;
     overflow: hidden;
     height: 100%;
+    width: 200%;
 }
 
 .figure-ic-sol {
@@ -666,6 +685,7 @@ input[type=text] {
     margin-top: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
+    width: 160%;
 }
 
 .portfolyo-sag-resim {
@@ -722,14 +742,13 @@ input[type=text] {
     color: black;
 }
 
-.hizmetlerimiz-buton-sol-ust {
+.hizmetlerimiz-buton {
     background-color: #E40A23;
     color: white;
     border-radius: 5px;
     font-family: "ProximaNovaRegular";
     width: 88px;
     height: 31px;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -741,34 +760,12 @@ input[type=text] {
     margin-top: -8%;
 }
 
-.hizmetlerimiz-buton-sag-ust {
-    background-color: #E40A23;
-    color: white;
-    border-radius: 5px;
-    font-family: "ProximaNovaRegular";
-    width: 88px;
-    height: 31px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .hizmetlerimiz-buton-sag-ust-ic {
     color: back;
     font-size: 13px;
     text-align: center;
     padding-top: 8%;
     margin-top: -8%;
-}
-
-.hizmetlerimiz-buton-sol-alt {
-    background-color: #E40A23;
-    color: white;
-    border-radius: 5px;
-    font-family: "ProximaNovaRegular";
-    width: 88px;
-    height: 31px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .hizmetlerimiz-buton-sol-alt-ic {
@@ -779,17 +776,6 @@ input[type=text] {
     margin-top: -8%;
 }
 
-.hizmetlerimiz-buton-sag-alt {
-    background-color: #E40A23;
-    color: white;
-    border-radius: 5px;
-    font-family: "ProximaNovaRegular";
-    width: 88px;
-    height: 31px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .hizmetlerimiz-buton-sag-alt-ic {
     color: back;
     font-size: 13px;
@@ -798,34 +784,7 @@ input[type=text] {
     margin-top: -8%;
 }
 
-.hizmetlerimiz-buton-sol-ust:hover {
-    background-color: #EAEAEA;
-    color: black;
-    border-radius: 5px;
-    font-family: "ProximaNovaRegular";
-    width: 88px;
-    height: 31px;
-}
-
-.hizmetlerimiz-buton-sag-ust:hover {
-    background-color: #EAEAEA;
-    color: black;
-    border-radius: 5px;
-    font-family: "ProximaNovaRegular";
-    width: 89px;
-    height: 30px;
-}
-
-.hizmetlerimiz-buton-sol-alt:hover {
-    background-color: #EAEAEA;
-    color: black;
-    border-radius: 5px;
-    font-family: "ProximaNovaRegular";
-    width: 88px;
-    height: 31px;
-}
-
-.hizmetlerimiz-buton-sag-alt:hover {
+.hizmetlerimiz-buton:hover {
     background-color: #EAEAEA;
     color: black;
     border-radius: 5px;
@@ -2389,6 +2348,7 @@ figure.effect-bubba figcaption::after {
     opacity: 0.5;
     -webkit-transition: opacity 0.50s, -webkit-transform 0.50s;
     transition: opacity 0.50s, transform 0.50s;
+    width: 185%;
 }
 
 figure.effect-bubba figcaption::before {
@@ -2424,7 +2384,7 @@ figure.effect-bubba h2 {
     transition: transform 0.35s;
     -webkit-transform: translate3d(0, -20px, 0);
     transform: translate3d(0, -20px, 0);
-    width: 100%;
+    width: 200%;
     height: 100%;
 }
 
@@ -2553,7 +2513,7 @@ figure.effect-bubba:hover p {
 .pagination a {
     font-size: 15px;
     font-family:'ProximaNovaBold';
-    width: 40px;
+    min-width: 40px;
     height: 40px;
     border: 1px solid#EAEAEA;
     -webkit-border-radius: 5px;
@@ -2561,7 +2521,6 @@ figure.effect-bubba:hover p {
     border-radius: 5px;
     color: black;
     float: left;
-    padding: 8px 16px;
     text-decoration: none;
     margin-right: 10px;
 }
@@ -2741,22 +2700,38 @@ figure.effect-bubba:hover p {
     .referanslar {
         width: 130px;
     }
+    .article-image {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media (max-width: 991px) {
     .referanslar {
         width: 110px;
     }
+    .slider-baslik {
+        font-size: 44px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .figure-ic-sol {
-        margin-left: 90px;
+        width: 80%
     }
     .referanslar {
         width: 100px;
     }
-}
+    figure.effect-bubba figcaption::after {
+        width: 90%;
+    }
+    figure.effect-bubba figcaption::before, figure.effect-bubba figcaption::after {
+        position: static;
+    }
+    figure.effect-bubba h2 {
+        font-size: 30px;
+    }
+}      
 
 @media (max-width: 702px) {
     .slider-manset-yazi {
@@ -2768,12 +2743,9 @@ figure.effect-bubba:hover p {
 }
 
 @media (max-width: 629px) {
-    .sol {
-        display: block;
-    }
     .sag {
         position: absolute;
-        top: -520px;
+        top: -560px;
     }
     .slider-manset-yazi {
         font-size: 16px;
@@ -2784,6 +2756,16 @@ figure.effect-bubba:hover p {
     }
     .referanslar {
         width: 80px;
+    }
+    .figure-ic-sol {
+        margin-left: 40px;
+        font-size: 13px;
+    }
+    .hizmetlerimiz-buton {
+        margin-top: 30px;
+    }
+    .slider-baslik {
+        font-size: 50px;
     }
 }
 
@@ -2798,6 +2780,37 @@ figure.effect-bubba:hover p {
      font-size: 11px;
     }
 
+    .pagination a {
+        min-width: 36px;
+    }
+
+    .sag {
+        position: absolute;
+        top: -600px;
+    }
+    figure.effect-bubba h2 {
+        font-size: 26px;
+    }
+    .hizmetlerimiz-buton {
+        margin-top: 70px;
+    }
+
+}
+
+@media (max-width: 419px) {
+    .figure-ic-sol {
+        margin-left: 35px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 412px){
+    .pagination a {
+        min-width: 32px;
+    }
+    .hizmetlerimiz-buton {
+        margin-top: 90px;
+    }
 }
 
 
