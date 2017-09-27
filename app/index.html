@@ -23,56 +23,8 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="https://use.fontawesome.com/d129996598.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.slider').owlCarousel({
-                center:true,
-                margin: 0,
-                items:1,
-                loop: true,
-                autoplay:true,
-                autoplayTimeout:1000,
-                autoplayHoverPause:true,
-                responsive: {
-                    600: {
-                      items: 1
-                    }
-                }
-            });
-            $('.slider2').owlCarousel({
-                center:false,
-                margin: 0,
-                items:2,
-                loop: true,
-                autoplay:true,
-                autoplayTimeout:1000,
-                autoplayHoverPause:true,
-                responsive: {
-                    600: {
-                      items: 2
-                    }
-                }
-            });
-            $('.slider3').owlCarousel({
-                center:false,
-                margin: 0,
-                items:2,
-                loop: true,
-                autoplay:true,
-                autoplayTimeout:1000,
-                autoplayHoverPause:true,
-                responsive: {
-                    600: {
-                      items: 6
-                    }
-                }
-            });
-            $('.container-menu').click(function(){
-            	$('.menuBar').toggle();
-            });
-        })
-    </script>
+    <script src="js/slider.js"></script>
+    <script src="js/menu.js"></script>
 
 </head>
 <body>
@@ -209,14 +161,14 @@
         </div>
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
             <div class="ok-content">
-                <div class="portfolyo-geri">
+                <div class="portfolyo-geri" id="geri2">
                     <div class="portfolyo-geri-ic">
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                     </div>
                 </div>
 
 
-                <div class="portfolyo-ileri">
+                <div class="portfolyo-ileri" id="ileri2">
                     <div class="portfolyo-ileri-ic">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </div>
@@ -383,14 +335,14 @@
         </div>
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
             <div class="ok-content">
-                <div class="portfolyo-geri">
+                <div class="portfolyo-geri" id="geri3">
                     <div class="portfolyo-geri-ic">
                         <i class="fa fa-angle-left" aria-hidden="true"></i>
                     </div>
                 </div>
 
 
-                <div class="portfolyo-ileri">
+                <div class="portfolyo-ileri" id="ileri">
                     <div class="portfolyo-ileri-ic">
                         <i class="fa fa-angle-right" aria-hidden="true"></i>
                     </div>

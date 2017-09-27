@@ -201,6 +201,7 @@ input[type=text] {
 
 .h350 {
     height: 350px;
+    position: relative;
 }
 
 .h360 {
@@ -373,6 +374,11 @@ input[type=text] {
     height: 150%;
 }
 
+.header2 {
+    z-index: -1000;
+    height: 150%;
+}
+
 .anasayfa-menu {
     z-index: 1;
     font-family: "ProximaNovaRegular";
@@ -500,8 +506,84 @@ input[type=text] {
     width: 100%;
 }
 
+.portItem {
+    width: 30% !important;
+    margin: 30px 30px 0 0; 
+    overflow: hidden;
+}
+
+.portRow {
+    margin-bottom: 48px !important; 
+    margin-left: 50px !important;
+}
+
 .harita {
     margin-top: 30px;
+}
+
+.blogDetayResim {
+    margin-top: 30px;
+}
+.blogDetayResim img {
+    height: 345px;
+    width: 100%;
+}
+
+.marginDetay {
+    margin-bottom: 50px;
+}
+
+.detaySag {
+    display: inline-block !important;
+    background-color: #fff !important;
+}
+
+.kaplayici {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    margin-bottom: 25px;
+}
+
+.kaplayici img {
+    width: 100%;
+}
+
+.blogLink {
+    padding: 20px;
+}
+
+.blogLink a {
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.blogLink a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.diger {
+    margin-left: 30px; 
+    margin-bottom: 30px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.yanMenu li {
+    float: left;
+    width: 100%;
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.butonlar button:focus {
+    background-color: #e40824!important;
+    color: #fff!important;
 }
 
 .owl-nav { 
@@ -564,6 +646,23 @@ input[type=text] {
     height: 30px;
 }
 
+.teklif-iste-buton2 {
+    position: relative;
+    background-color: #f7f7f7;
+    color: black;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+}
+
+.teklif-iste-buton2:hover {
+    background-color: #E40A23;
+    color: white;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+}
+
 .teklif-iste-buton-ic {
     font-size: 12px;
     text-align: center;
@@ -582,6 +681,23 @@ input[type=text] {
 }
 
 .musteri-panel-buton:hover {
+    background-color: #E40A23;
+    color: white;
+    border-radius: 5px;
+    width: 140px;
+    height: 30px;
+}
+
+.musteri-panel-buton2 {
+    position: relative;
+    background-color: #f7f7f7;
+    color: black;
+    border-radius: 5px;
+    width: 140px;
+    height: 30px;
+}
+
+.musteri-panel-buton2:hover {
     background-color: #E40A23;
     color: white;
     border-radius: 5px;
@@ -745,6 +861,19 @@ input[type=text] {
     display: inline-block;
     overflow: hidden;
     height: 100%;
+    width: 200%;
+}
+
+.portfolyo-sol-resim2 {
+    z-index: -1;
+    position: absolute;
+    display: inline-block;
+    overflow: hidden;
+    height: 100%;
+    width: 200%;
+}
+
+.portfolyo-sol-resim2 img {
     width: 200%;
 }
 
@@ -2778,6 +2907,12 @@ figure.effect-bubba:hover p {
         width: 100%;
         height: 100%;
     }
+    .portfolyo-sol-resim2 img {
+        width: 250%;
+    }
+    figure.effect-bubba h2 {
+        padding-top: 280px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -2786,6 +2921,15 @@ figure.effect-bubba:hover p {
     }
     .slider-baslik {
         font-size: 44px;
+    }
+    .portItem {
+        width: 100% !important;
+    }
+    .portRow {
+        margin-left: 0px !important;
+    }
+    .detaySag {
+        margin-bottom: 130px;
     }
 }
 
@@ -2903,6 +3047,11 @@ figure.effect-bubba:hover p {
 @media(max-width: 462px) {
     .en-menu {
         margin: 10px 0;
+    }
+    .container-menu {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: -5px;
     }
 }
 
