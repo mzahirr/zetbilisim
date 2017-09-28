@@ -507,14 +507,12 @@ input[type=text] {
 }
 
 .portItem {
-    width: 30% !important;
-    margin: 30px 30px 0 0; 
+    margin: 30px 0 0 0; 
     overflow: hidden;
 }
 
 .portRow {
     margin-bottom: 48px !important; 
-    margin-left: 50px !important;
 }
 
 .harita {
@@ -581,13 +579,46 @@ input[type=text] {
     margin-bottom: 5px;
 }
 
-.butonlar button:focus {
-    background-color: #e40824!important;
-    color: #fff!important;
+.dropdownMenu {
+    width: 100%;
+    border:1px solid #ccc;
+    display: inline-block;
+}
+.dropdownMenu li {
+    width: 100%;
+    text-align: center;
+    float: left;
+    display: none;
+}
+.dropdownMenu i {
+    float: right;
 }
 
-.owl-nav { 
-    display: none; 
+.select-box {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    display: inline-block;
+}
+.opt {
+    float: left;
+    padding:8px;
+    border: 1px solid #ddd;
+}
+.select-box2 {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    display: inline-block;
+}
+.opt2 {
+    float: left;
+    padding:8px;
+    border: 1px solid #ddd;
+}
+.selected {
+    background-color: #e40b24 !important;
+    color: #fff;
 }
 
 .slider-baslik {
@@ -744,7 +775,7 @@ input[type=text] {
     width: 40px;
     height: 40px;
     float: left;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .header-buton-ileri-ic {
@@ -768,6 +799,8 @@ input[type=text] {
     font-family: "ProximaNovaRegular";
     width: 180px;
     height: 40px;
+    margin-top: 10px;
+    margin-left: -15px;
 }
 
 .header-buton-detay:hover {
@@ -814,8 +847,20 @@ input[type=text] {
     border-radius: 10px;
     width: 40px;
     position: relative;
-    float: left;
-    margin-right: 5px;
+    float: right;
+    margin-right: 50px;
+    margin-top: -430px;
+}
+
+.portfolyo-geri2 {
+    background-color: #E40A23;
+    color: white;
+    border-radius: 10px;
+    width: 40px;
+    position: relative;
+    float: right;
+    margin-top: -160px;
+    margin-right: 50px;
 }
 
 .portfolyo-geri-ic {
@@ -832,16 +877,45 @@ input[type=text] {
     position: relative;
 }
 
+.portfolyo-geri2:hover {
+    background-color: #EAEAEA;
+    color: black;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
 .portfolyo-ileri {
     background-color: #E40A23;
     color: white;
     border-radius: 10px;
     width: 40px;
     position: relative;
-    float: left;
+    float: right;
+    margin-top: -430px;
 }
 
 .portfolyo-ileri:hover {
+    background-color: #EAEAEA;
+    color: black;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.portfolyo-ileri2 {
+    background-color: #E40A23;
+    color: white;
+    border-radius: 10px;
+    width: 40px;
+    position: relative;
+    float: right;
+    margin-top: -160px;
+}
+
+.portfolyo-ileri2:hover {
     background-color: #EAEAEA;
     color: black;
     border-radius: 10px;
@@ -1595,10 +1669,6 @@ input[type=text] {
 }
 
 /*-------------------------------Check BOX Style------------------------*/
-
-input[type=checkbox] {
-    visibility: hidden;
-}
 
 /* SLIDE ONE */
 .slideOne {
