@@ -18,7 +18,7 @@ $(document).ready(function() {
     });
     $('.slider2').owlCarousel({
         center:false,
-        margin: 0,
+        margin: 30,
         loop: true,
         items:1,
         autoplay:true,
@@ -28,7 +28,7 @@ $(document).ready(function() {
             0:{
                 items: 1
             },
-            850: {
+            992: {
               items: 2
                 }
             },
@@ -38,7 +38,7 @@ $(document).ready(function() {
     });
     $('.slider3').owlCarousel({
         center:false,
-        margin: 0,
+        margin: 30,
         items:6,
         loop: true,
         autoplay:true,

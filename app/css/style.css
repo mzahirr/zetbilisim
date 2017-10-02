@@ -621,6 +621,35 @@ input[type=text] {
     color: #fff;
 }
 
+.slider2 .owl-item {
+    overflow: hidden;
+}
+
+
+
+.slider2 {
+    width: 1170px!important;
+    margin: auto;
+    padding: 0 15px!important;
+}
+@media (max-width: 1199px) {
+    .slider2 {
+        width: 970px!important;
+    }
+}
+@media (max-width: 991px) {
+    .slider2 {
+        width: 750px!important;
+    }
+}
+@media (max-width: 750px) {
+    .slider2 {
+        width: 100%!important;
+        padding: 0!important;
+    }
+}
+
+
 .slider-baslik {
     float: left;
     width: 100%;
@@ -957,11 +986,11 @@ input[type=text] {
     text-shadow: 2px 2px 2px #000;
     color: white;
     position: absolute;
-    margin-left: 50px;
+    margin-left: 70px;
     margin-top: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
-    width: 160%;
+    width: 80%;
 }
 
 .portfolyo-sag-resim {
@@ -2620,7 +2649,21 @@ figure.effect-bubba figcaption::after {
     opacity: 0.5;
     -webkit-transition: opacity 0.50s, -webkit-transform 0.50s;
     transition: opacity 0.50s, transform 0.50s;
-    width: 185%;
+    width: 180%;
+}
+
+.h370 figure.effect-bubba figcaption::before,
+.h370 figure.effect-bubba figcaption::after {
+    position: absolute;
+    top: 8%;
+    right: 3%;
+    bottom: 10%;
+    left: 8%;
+    content: '';
+    opacity: 0.5;
+    -webkit-transition: opacity 0.50s, -webkit-transform 0.50s;
+    transition: opacity 0.50s, transform 0.50s;
+    width: 86%;
 }
 
 figure.effect-bubba figcaption::before {
@@ -2787,6 +2830,7 @@ figure.effect-bubba:hover p {
     font-family:'ProximaNovaBold';
     min-width: 40px;
     height: 40px;
+    line-height: 40px;
     border: 1px solid#EAEAEA;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
